@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+title: "Locking Pretrained Weights via Deep Low-Rank Residual Distillation"
+type: software
+message: "Please consider citing our paper if you find this work useful in your research."
+authors:
+  - family-names: Sakamoto
+    given-names: Keitaro
+  - family-names: Ablin
+    given-names: Pierre
+  - family-names: Danieli
+    given-names: Federico
+  - family-names: Cuturi
+    given-names: Marco
+repository-code: "https://github.com/apple/ml-dlr-lock"
+url: "https://arxiv.org/abs/2605.10777"
+preferred-citation:
+  title: "Locking Pretrained Weights via Deep Low-Rank Residual Distillation"
+  type: article
+  authors:
+    - family-names: Sakamoto
+      given-names: Keitaro
+    - family-names: Ablin
+      given-names: Pierre
+    - family-names: Danieli
+      given-names: Federico
+    - family-names: Cuturi
+      given-names: Marco
+  year: 2026
+  url: "https://arxiv.org/abs/2605.10777"
+  identifiers:
+    - type: other
+      value: "arXiv:2605.10777"
+      description: arXiv preprint

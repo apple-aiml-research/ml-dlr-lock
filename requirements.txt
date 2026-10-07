@@ -1,0 +1,16 @@
+# Core
+torch>=2.13
+transformers>=5.14
+datasets>=5.0
+
+# Multi-GPU sharding via device_map="auto"
+accelerate
+
+# Optional: 8-bit AdamW for large models
+# bitsandbytes
+
+# Optional: downstream benchmark evaluation
+# lm-eval>=0.4
+
+# Optional: Triton kernels
+# triton>=3.0

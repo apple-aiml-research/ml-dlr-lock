@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dlr-lock"
+version = "0.1.0"
+description = "Making pretrained LLM weights hard to fine-tune via deep low-rank residual substitution"
+readme = "README.md"
+# LICENSE points at ACKNOWLEDGEMENTS, so both must travel with the package.
+license-files = ["LICENSE", "ACKNOWLEDGEMENTS"]
+requires-python = ">=3.10"
+dependencies = [
+    "torch>=2.13",
+    "transformers>=5.14",
+    "datasets>=5.0",
+]
+
+[project.optional-dependencies]
+# Multi-GPU sharding via device_map="auto".
+accelerate = ["accelerate"]
+# 8-bit AdamW, for fitting optimizer state of large models.
+optim8bit = ["bitsandbytes"]
+# Downstream benchmark evaluation.
+eval = ["lm-eval>=0.4"]
+# Triton kernels (CUDA kernels compile through torch.utils.cpp_extension).
+kernels = ["triton>=3.0"]
+
+[tool.setuptools]
+packages = ["dlr_lock"]

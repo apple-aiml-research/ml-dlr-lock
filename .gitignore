@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.egg
+build/
+dist/
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Caches / downloaded assets
+cache/
+.cache/
+*.pt
+*.safetensors
+*.ckpt
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Outputs
+runs/
+results/
+figures/
+*.json.gz
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
